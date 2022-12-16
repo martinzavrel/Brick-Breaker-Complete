@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 #endif
 
-[DefaultExecutionOrder(1000)]
+[DefaultExecutionOrder(1000)] //load delay
 public class MenuUIHandler : MonoBehaviour
 {
     public TextMeshProUGUI userName;
