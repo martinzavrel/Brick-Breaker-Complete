@@ -89,7 +89,7 @@ public class MainManager : MonoBehaviour
     public void GoToMenu()
     {
         SceneManager.LoadScene(0);
-        DataManager.Instance.SaveHighScore();
+      
     }
 
     void HighScoreUpdate()
@@ -98,5 +98,6 @@ public class MainManager : MonoBehaviour
         DataManager.Instance.highScore = m_Points;
         DataManager.Instance.userNameHighScore = DataManager.Instance.userName;
         HighScoreText.text = "New High Score: " + m_Points + " - " + DataManager.Instance.userNameHighScore;
+        DataManager.Instance.SaveHighScore();
     }
 }
